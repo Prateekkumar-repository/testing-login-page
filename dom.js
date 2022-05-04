@@ -1,19 +1,20 @@
-// by id
-// const title = document.getElementsByTagName('li');
+/*Make the 2nd item have green background color
+Make the 3rd item invisible
+*/
+var item2 = document.querySelector
+('.list-group-item:nth-child(2)');
+item2.style.backgroundColor = 'green';
 
-// title[2].style.backgroundColor ='green';
+var item3 = document.querySelector
+('.list-group-item:nth-child(3)');
+item3.style.color = 'white';
 
-// for(let i=0; i<title.length; i++) {
-//     title[i].style.fontWeight ='bold';
-    
-// }
 
-// bs class 
+var titles = document.querySelectorAll('.list-group-item');
+titles[1].style.color = 'green';
 
-const title = document.getElementsByClassName('list-group-item');
-title[2].style.backgroundColor ='green';
 
-for(let i=0; i<title.length; i++) {
-    title[i].style.fontWeight ='bold';
-    
+var odd = document.querySelectorAll('li:nth-child(odd)');
+for(let i=0; i<odd.length; i++) {
+    odd[i].style.backgroundColor = 'green';
 }
