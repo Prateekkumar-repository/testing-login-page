@@ -1,46 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <title>Item Lister</title>
 </head>
 <body>
-
-    <div>
-        <h2 id="check" style="color: blue;">Register to login</h2>
-        <form style="border: 5px black solid;padding-left: 5px; margin-right: 290px;" action="">
-            <div> Name: <br>
-                 <input type="text" placeholder="Enter your Name">
-            </div> <br>
-            <div> Contact Number: <br> <input type="number" placeholder="Enter your Mobile number">
-            </div><br>
-            <div> email:  <br> <input type="email" placeholder="Yourmail@mail.com">
-            </div> <br>
-            <div> Meeting schedule at:  <br> <input type="date">
-            </div> <br>
-            <div>
-                <button id="btn" style="color: blue;">Get a call</button>
-            </div> <br>
-
-            <script>
-                const button = document.querySelector('#btn');
-const check = document.querySelector('#check');
-
-button.addEventListener('click', function() {  
-
-    console.log('Submitted', event);
-
-
-})
-
-            </script>
-        </form>
+  <header id="main-header" class="bg-success text-white p-4 mb-3">
+    <div class="container">
+      <h1 id="header-title">Item Lister <span style="display:none">123</span></h1>
     </div>
-    
+  </header>
+  <div class="container">
+   <div id="main" class="card card-body">
+    <h2 class="title">Add Items</h2>
+    <form class="form-inline mb-3">
+      <input type="text" class="form-control mr-2">
+      <input type="submit" class="btn btn-dark" value="Submit">
+    </form>
+    <h2 class="title">Items</h2>
+    <ul id="items" class="list-group">
+      <li class="list-group-item">Item 1</li>
+      <li class="list-group-item">Item 2</li>
+      <li class="list-group-item">Item 3</li>
+      <li class="list-group-item">Item 4</li>
+    </ul>
+   </div>
+  </div>
+  <script src="./dom.js"></script>
 </body>
-</html>
+</html> 
