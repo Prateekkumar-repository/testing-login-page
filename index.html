@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+</head>
+<body>
+
+    <div>
+        <h2 id="check" style="color: blue;">Register to login</h2>
+        <form style="border: 5px black solid;padding-left: 5px; margin-right: 290px;" action="">
+            <div> Name: <br>
+                 <input type="text" placeholder="Enter your Name">
+            </div> <br>
+            <div> Contact Number: <br> <input type="number" placeholder="Enter your Mobile number">
+            </div><br>
+            <div> email:  <br> <input type="email" placeholder="Yourmail@mail.com">
+            </div> <br>
+            <div> Meeting schedule at:  <br> <input type="date">
+            </div> <br>
+            <div>
+                <button id="btn" style="color: blue;">Get a call</button>
+            </div> <br>
+
+            <script>
+                const button = document.querySelector('#btn');
+const check = document.querySelector('#check');
+
+button.addEventListener('click', function() {  
+
+    console.log('Submitted', event);
+
+
+})
+
+            </script>
+        </form>
+    </div>
+    
+</body>
+</html>
