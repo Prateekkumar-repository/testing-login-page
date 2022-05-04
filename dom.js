@@ -1,20 +1,46 @@
-/*Make the 2nd item have green background color
-Make the 3rd item invisible
+/*parentElement
+lastelementchild
+lastchild
+createchild
+firstelementchild
+firstchild
+nextsibling
+nextelementsibling
+previoussibling
+previouselementsibling
+createelement
+setAttribute
+createtesxtnode
+appendchild
+
+
+Now go head and add HEllo word before Item Lister
+Now go head and add HEllo word before Item 1 
 */
-var item2 = document.querySelector
-('.list-group-item:nth-child(2)');
-item2.style.backgroundColor = 'green';
 
-var item3 = document.querySelector
-('.list-group-item:nth-child(3)');
-item3.style.color = 'white';
+var itemList = document.querySelector('#items');
+
+console.log(itemList.parentNode);
+itemList.parentNode.style.backgroundColor = 'grey';
+
+console.log(itemList.parentElement);
+itemList.parentElement.style.backgroundColor = 'grey';
+ console.log(itemList.firstElementChild);
+itemList.firstElementChild.textContent = 'hello';
+
+console.log(itemList.lastElementChild);
+itemList.lastElementChild.textContent = 'hello';
+
+console.log(itemList.nextElementSibling);
+
+console.log(itemList.previousElementSibling);
+console.log(itemList.nextElementSibling);
+
+var newDiv = document.createElement('div');
+console.log(newDiv);
+newDiv.className = 'random-class-Name';
+newDiv.IdName = 'Hello1';
+newDiv.setAttribute('title','HELLO1 DIV')
 
 
-var titles = document.querySelectorAll('.list-group-item');
-titles[1].style.color = 'green';
 
-
-var odd = document.querySelectorAll('li:nth-child(odd)');
-for(let i=0; i<odd.length; i++) {
-    odd[i].style.backgroundColor = 'green';
-}
